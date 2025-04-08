@@ -27,7 +27,7 @@ export const MyPDF = () => {
               <Image src={prescriptionData?.doctor?.qr_code || "qr-code.png"} style={[styles.imgSize]} />
             </View>
             <View style={[styles.marginBottom]}>
-              <View style={[styles.flex, ]}>
+              <View style={[styles.flex]}>
                 <View style={[styles.flex, {gap: 6, width: "33%"}]}>
                   <Text style={[styles.textGrayDark, styles.fontMedium]}>নাম:</Text>
                   <Text>{prescriptionData.patient.name}</Text>
@@ -107,16 +107,9 @@ export const MyPDF = () => {
 
 const DownloadPDF = () => {
   return (
-    <div className="w-full ">
-      <PDFViewer width="100%" height="100%">
-        <MyPDF />
-      </PDFViewer>
-      <div>
-        <PDFDownloadLink document={<MyPDF />} fileName="Prescription">
-          <Button />
-        </PDFDownloadLink>
-      </div>
-    </div>
+    <PDFDownloadLink document={<MyPDF />} fileName="Prescription">
+      <Button />
+    </PDFDownloadLink>
   );
 };
 

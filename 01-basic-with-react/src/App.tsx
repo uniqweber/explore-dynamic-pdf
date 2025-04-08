@@ -3,9 +3,8 @@ import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <div className="flex ">
+    <div className="">
       <Home />
-
       <DownloadPDF />
     </div>
   );
