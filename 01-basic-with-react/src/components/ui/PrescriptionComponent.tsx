@@ -57,14 +57,14 @@ export const DoctorAdvises = ({advices}: {advices: string[]}) => {
 
 export const PrescriptionFooter = ({doctorName}: {doctorName: string}) => {
   return (
-    <div className="flex items-center justify-between pt-6 border-t border-gray-200 text-sm text-gray-700">
+    <div className="flex items-end justify-between pt-6 border-t border-gray-200 text-sm text-gray-700">
       <div>
         <p className="text-xs text-gray-500">© ২০২৫ {doctorName} | প্রেসক্রিপশন শুধুমাত্র ব্যক্তিগত ব্যবহারের জন্য</p>
       </div>
       <div className="text-right">
-        <p className="mb-1">....................................................</p>
-        <p>{doctorName}</p>
-        <p className="text-xs">স্বাক্ষর</p>
+        <p className="mb-1 text-gray-300">....................................................</p>
+        <p className="text-gray-800">{doctorName}</p>
+        <p className="text-xs text-gray-500">স্বাক্ষর</p>
       </div>
     </div>
   );
