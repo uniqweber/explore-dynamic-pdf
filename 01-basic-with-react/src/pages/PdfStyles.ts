@@ -22,10 +22,10 @@ Font.register({
 Font.register({
   family: "shiliguri",
   fonts: [
-    {src: "/public/fonts/shiliguri/HindSiliguri-Regular.ttf", fontWeight: "normal"},
-    {src: "/public/fonts/shiliguri/HindSiliguri-Medium.ttf", fontWeight: "medium"},
-    {src: "/public/fonts/shiliguri/HindSiliguri-SemiBold.ttf", fontWeight: "semibold"},
-    {src: "/public/fonts/shiliguri/HindSiliguri-Bold.ttf", fontWeight: "bold"},
+    {src: "/fonts/shiliguri/HindSiliguri-Regular.ttf", fontWeight: "normal"},
+    {src: "/fonts/shiliguri/HindSiliguri-Medium.ttf", fontWeight: "medium"},
+    {src: "/fonts/shiliguri/HindSiliguri-SemiBold.ttf", fontWeight: "semibold"},
+    {src: "/fonts/shiliguri/HindSiliguri-Bold.ttf", fontWeight: "bold"},
   ],
 });
 
