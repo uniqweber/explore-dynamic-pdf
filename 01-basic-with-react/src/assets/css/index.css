@@ -6,3 +6,11 @@
     --font-bengali: "Anek Bangla", sans-serif;
     --font-nato: "Noto Sans Bengali", sans-serif;
 }
+
+@utility flex-between{
+    @apply flex items-center justify-between
+}
+
+@utility flex-center{
+    @apply flex items-center justify-center
+}

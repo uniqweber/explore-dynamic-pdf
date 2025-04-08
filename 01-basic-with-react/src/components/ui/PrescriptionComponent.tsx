@@ -23,7 +23,7 @@ export const PatientInfo = ({placeholder, title}: {placeholder: string; title: s
 
 export const PatientDisease = ({summary}: {summary: string}) => {
   return (
-    <div className="mb-6 text-sm text-gray-800  ">
+    <div className="mb-6 text-sm text-gray-800 border border-emerald-200 px-4 py-3.5 rounded-md bg-emerald-50 ">
       <h3 className="text-base font-semibold mb-1 text-emerald-600">রোগীর বর্ণনা</h3>
       <p className="text-gray-700">{summary}</p>
     </div>

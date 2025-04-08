@@ -7,10 +7,10 @@ const App = () => {
     console.log("downloaded...");
   };
   return (
-    <div className="bg-gray-100 min-h-screen   flex items-center justify-center p-6 font-nato">
-      <div className="max-w-4xl flex flex-col justify-between w-full h-[1100px] mx-auto bg-white  rounded-2xl shadow-2xl p-20">
+    <div className="bg-gray-100 min-h-screen  flex-center p-6 font-nato">
+      <div className="max-w-4xl flex-between flex-col w-full h-[1100px] mx-auto bg-white  rounded-2xl shadow-2xl p-20">
         <div>
-          <div className="flex items-center justify-between border-b border-gray-200 pb-4 mb-3">
+          <div className="flex-between border-b border-gray-200 pb-4 mb-3">
             <DoctorInfo doctor={prescription.doctor} />
             <img src={prescription.doctor.qr_code} alt="Logo" className="size-22 object-cover " />
           </div>
@@ -25,13 +25,14 @@ const App = () => {
           </div>
 
           <PatientDisease summary={prescription.summary.description} />
+
           <div className="mb-6">
             <h2 className="text-base font-semibold text-emerald-600 mb-4 border-b border-gray-200 pb-1">ঔষধ</h2>
             <PrescribeMedicine medicines={prescription.medicine} />
           </div>
         </div>
 
-        <div>
+        <div className="w-full">
           <DoctorAdvises advices={prescription.advice} />
           <PrescriptionFooter doctorName={prescription.doctor.name} />
         </div>
