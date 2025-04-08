@@ -5,7 +5,7 @@ export const Button = ({handler}: {handler?: MouseEventHandler}) => {
   return (
     <button
       onClick={handler}
-      className="absolute cursor-pointer top-5 right-5 bg-emerald-600 text-white text-sm font-sans h-8 px-3 rounded-md inline-flex items-center justify-center gap-1.5"
+      className=" cursor-pointer  bg-emerald-600 text-white text-sm font-sans h-8 px-3 rounded-md inline-flex items-center justify-center gap-1.5"
     >
       <FaDownload className="text-xs" />
       <span>Download PDF</span>

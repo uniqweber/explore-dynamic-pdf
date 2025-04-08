@@ -107,9 +107,11 @@ export const MyPDF = () => {
 
 const DownloadPDF = () => {
   return (
-    <PDFDownloadLink document={<MyPDF />} fileName="Prescription">
-      <Button />
-    </PDFDownloadLink>
+    <div className=" absolute top-5 right-5">
+      <PDFDownloadLink document={<MyPDF />} fileName="Prescription">
+        <Button />
+      </PDFDownloadLink>
+    </div>
   );
 };
 
