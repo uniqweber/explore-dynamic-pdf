@@ -1,4 +1,4 @@
-import {Page, Text, View, Document, PDFViewer, PDFDownloadLink, Image} from "@react-pdf/renderer";
+import {Page, Text, View, Document,  PDFDownloadLink, Image} from "@react-pdf/renderer";
 import {Button} from "../components/ui/Button";
 import prescriptionData from "../utils/data/prescription.json";
 import {styles} from "./PdfStyles";
